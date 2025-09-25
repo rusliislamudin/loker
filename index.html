@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowongan Kerja - Dapur LL Waterpark SunCity </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f9f9f9 0%, #e6f2ff 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .highlight {
+            background-color: #fff9c4;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #e65100;
+        }
+        
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .job-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ffeaa7;
+        }
+        
+        .requirements, .benefits {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .requirements h2, .benefits h2 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: #ff6b6b;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+        
+        .contact-info {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .contact-info h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+        }
+        
+        .floating-whatsapp a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: #25D366;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-whatsapp a:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .job-card {
+                min-width: 100%;
+            }
+            
+            .floating-whatsapp {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-whatsapp a {
+                width: 60px;
+                height: 60px;
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lowongan Kerja Stand Dapur LL</h1>
+            <p>Bergabunglah dengan tim kami di <span class="highlight">Waterpark Suncity Sidoarjo</span> - Khusus wanita domisili <span class="highlight">Sidoarjo Kota</span></p>
+        </header>
+        
+        <div class="job-details">
+            <div class="job-card">
+                <h3>📝 Posisi yang Dibutuhkan</h3>
+                <ul>
+                    
+                    <li><strong>Crew</strong> (1 Orang)</li>
+                </ul>
+            </div>
+            
+            <div class="job-card">
+                <h3>📍 Lokasi Kerja</h3>
+                <p><strong> Area Waterpark Suncity Sidoarjo</strong></p>
+                <p>Area hiburan keluarga dengan suasana yang menyenangkan dan dinamis.</p>
+            </div>
+            
+            <div class="job-card">
+                <h3>⏰ Waktu Kerja</h3>
+                <p><strong>Fleksibel</strong></p>
+                <p>Disesuaikan dengan jam operasional waterpark/reservasi rombongan.</p>
+            </div>
+        </div>
+        
+        <div class="requirements">
+            <h2>✅ Persyaratan</h2>
+            <ul>
+                <li>Perempuan, usia maksimal 35 tahun</li>
+                <li>Domisili Sidoarjo Kota (prioritas)</li>
+                <li>Pendidikan minimal SMA/SMK sederajat</li>
+                <li>Berpenampilan rapi dan komunikatif</li>
+                <li>Bersemangat, jujur, dan bertanggung jawab</li>
+                <li>Mampu menjaga kebersihan lingkungan kerja</li>
+                <li>Pengalaman di bidang F&B menjadi nilai tambah (bukan keharusan)</li>
+            </ul>
+        </div>
+        
+        <div class="benefits">
+            <h2>💼 Yang Kami Tawarkan</h2>
+            <ul>
+                <li>Gaji pokok + free parkir </li>
+                <li>Bonus kinerja dan insentif hari libur</li>
+                <li>Bisa menikmati suasana waterpark dan free berenang maks 2org.</li>
+                <li>Lingkungan kerja yang nyaman dan asri</li>
+                
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h2>📞 Cara Melamar</h2>
+            <p>Kirimkan CV dan foto terbaru Anda melalui WhatsApp ke:</p>
+            <p><strong>RiceBox_Dapur LL</strong></p>
+            <a href="https://wa.me/6287824118159?text=Halo,%20saya%20tertarik%20dengan%20lowongan%20kerja%20di%20Stand%20Ayam%20Geprek%20Suncity" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">Format pesan: <strong>Posisi_Nama_Usia</strong> (Contoh: Crew_Sari_21)</p>
+        </div>
+    </div>
+    
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20lowongan%20kerja%20di%20Stand%20Ayam%20Geprek%20Suncity" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Fungsi untuk mengubah nomor WhatsApp secara dinamis
+        function updateWhatsAppNumber() {
+            // Ganti nomor berikut dengan nomor WhatsApp yang diinginkan
+            const phoneNumber = "6281234567890";
+            
+            // Encode pesan default
+            const defaultMessage = "Halo, saya tertarik dengan lowongan kerja di Stand Ayam Geprek Suncity";
+            const encodedMessage = encodeURIComponent(defaultMessage);
+            
+            // Update semua link WhatsApp
+            const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+            whatsappLinks.forEach(link => {
+                link.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            });
+        }
+        
+        // Panggil fungsi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', updateWhatsAppNumber);
+        
+        // Animasi tambahan untuk elemen saat di-scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Terapkan animasi pada elemen
+        document.querySelectorAll('.job-card, .requirements, .benefits, .contact-info').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
